@@ -165,11 +165,11 @@ public class linearizeGenericTree {
 	  if(node.children.size() == 0) {
 		  return node;
 	  }
-	  Node lkt =  linearize2(node.children.get(node.children.size()-1));
+	  Node lkt =  linearize2(node.children.get(node.children.size()-1)); //last ki tail
 	  while(node.children.size()>1) {
 		  Node last = node.children.remove(node.children.size()-1);
 		  Node sl = node.children.get(node.children.size()-1);
-		  Node slkt = linearize2(sl);
+		  Node slkt = linearize2(sl);//second last ki tail
 		  slkt.children.add(last);
 	  }
 	  return lkt;
