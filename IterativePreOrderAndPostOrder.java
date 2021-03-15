@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class IterativePreOrderAndPostOrder {
 	private static class Node {
 		int data;
 		ArrayList<Node> children = new ArrayList<>();
